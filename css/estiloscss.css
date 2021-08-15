@@ -295,13 +295,11 @@ ul li {
   text-align: center;
   border: 2px;
   background-color: #e8eb48;
-  grid-template-areas: "area1 area2"
- "area3 area2"; }
+  grid-template-areas: "area1 area2" "area3 area2"; }
 
 /*extend*/
 .gridQuienes2 {
-  grid-template-areas: "area1 area2"
- "area1 area3"; }
+  grid-template-areas: "area1 area2" "area1 area3"; }
 
 .imagenQuienes {
   width: 100%;
@@ -364,14 +362,10 @@ input:focus {
   width: 100%; }
 
 /*FIN CONTACTO*/
-.error{
+.error {
   font-size: 120px;
-  color: rgb(44, 42, 42);
-  text-align: center;
-  
-}
-.errorMain{
-  height: 500px;
-  text-align: center;
-  padding-top: 50px;
-}
+  color: #2c2a2a;
+  text-align: center; }
+
+.errorMain {
+  height: 500px; }
