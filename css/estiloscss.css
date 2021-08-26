@@ -5,15 +5,14 @@
 
 /*estiloFuentegeneral*/
 body {
-  font-family: 'Lato', sans-serif;
-  margin-left: 2px;
-  margin-right: 2px; }
+  font-family: 'Lato', sans-serif; }
 
 /*estiloMain*/
 main {
   background-color: white;
   line-height: 25px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  width: 100%; }
 
 /*estiloH2*/
 h2 {
@@ -71,7 +70,7 @@ h4 {
 /* Fin Menú*/
 /*Footer*/
 .gridfooter {
-  grid-template-columns: 95%;
+  grid-template-columns: 100%;
   grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
   align-content: center;
   grid-template-areas: "pie1" "pie2" "pie3" "pie4" "pie5"; }
@@ -174,7 +173,7 @@ button:hover {
 /*Fin Tutoriales*/
 /*Quienes Somos*/
 .gridQuienes, .gridQuienes2 {
-  width: 98%;
+  width: 100%;
   height: 70%;
   display: grid;
   padding-right: 20px;
@@ -186,7 +185,6 @@ button:hover {
   color: #394047;
   padding-left: 10px;
   text-align: center;
-  border: 2px;
   background-color: #ffc107;
   grid-template-areas: "area1 area2" "area3 area2"; }
 
@@ -301,8 +299,6 @@ input:focus {
     height: 125px; }
   .Valores {
     font-size: 8px; }
-  audio {
-    margin-left: 10%; }
   .VideosTutoriales__Titulo {
     margin-left: 18%;
     margin-right: 20%;
@@ -338,8 +334,6 @@ input:focus {
     height: 175px; }
   .Valores {
     font-size: 10px; }
-  audio {
-    margin-left: 25%; }
   .VideosTutoriales__Titulo {
     margin-left: 20%;
     margin-right: 20%;
@@ -369,8 +363,6 @@ input:focus {
     height: 250px; }
   .Valores {
     font-size: 13px; }
-  audio {
-    margin-left: 40%; }
   .VideosTutoriales__Titulo {
     margin-left: 30%;
     margin-right: 20%;

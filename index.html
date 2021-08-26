@@ -39,17 +39,13 @@
     </header>
 
     <!--fin header-->
-
     <!--inicio nav-->
     <nav class="navbar navbar-expand-lg navbar-light bg-warning justify-content-center x-5 sticky-top">
         <div class="btn-group">
-
-            <button type="button" class="btn btn-warning btn-md" data-bs-toggle="dropdown" aria-expanded="false">
-                Home
-            </button>
+            <a href="index.html" class="btn btn-warning btn-md">Home</a>
         </div>
-        <div class="btn-group">
 
+        <div class="btn-group">
 
             <button type="button" class="btn btn-warning btn-md dropdown-toggle" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -57,15 +53,12 @@
             </button>
 
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item fs-6" href="categorias.html#CHyM">Herramientas y Maquinarias</a></li>
-                <li><a class="dropdown-item fs-6" href="categorias.html#CRyD">Rotura y Demolición</a></li>
-                <li><a class="dropdown-item fs-6" href="categorias.html#CTeA">Trabajo en Altura</a></li>
-                <li><a class="dropdown-item fs-6" href="categorias.html#CTer">Terreno</a></li>
+                <li><a class="dropdown-item fs-6" href="categorias.html#HyM">Herramientas y Maquinarias</a></li>
+                <li><a class="dropdown-item fs-6" href="categorias.html#RyD">Rotura y Demolición</a></li>
+                <li><a class="dropdown-item fs-6" href="categorias.html#TeA">Trabajo en Altura</a></li>
+                <li><a class="dropdown-item fs-6" href="categorias.html#Ter">Terreno</a></li>
             </ul>
         </div>
-
-
-
         <div class="btn-group">
             <button type="button" class="btn btn-warning btn-md dropdown-toggle" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -94,28 +87,12 @@
         </div>
 
         <div class="btn-group">
-            <link rel="stylesheet" href="contacto.html">
-            <button type="button" class="btn btn-warning btn-md " data-bs-toggle="dropdown" aria-expanded="false">
-                Contacto
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item fs-6" href="contacto.html">Tenés dudas? Contactanos</a></li>
-            </ul>
-
-        </div>
-        <div class="header__buscador--font" scope="col">
-            <div class="input-group">
-                <div class="form-outline">
-                    <input type="search" id="form1" class="form-control" />
-                    <label class="form-label" for="form1">Buscar</label>
-                </div>
-                <button type="button" class="btn btn-secondary">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
+            <a href="contacto.html" class="btn btn-warning btn-md">Contacto</a>
         </div>
     </nav>
     <!--fin nav-->
+
+
 
     <!--inicio main-->
     <main>
@@ -163,7 +140,7 @@
         </div>
 
         <!--inicio sección Herramientas-->
-        <div class="row row-cols-1 row-cols-md-4 g-3">
+        <div class="row row-cols-1 row-cols-md-4 g-3 d-flex justify-content-center">
             <div class="col" id="HHyM" data-aos="fade-up">
                 <div class="card h-100">
                     <div class="card text-dark bg-warning  card text-center " style="width: 20rem;height: 100%">
@@ -174,7 +151,10 @@
                                 diseñados para facilitar la realización de ciertos trabajos como
                                 deconstrucción,metalúrgica, plomería-gas, jardinería, uso industrial y particular.
                             </p>
-                            <a href="categorias.html#HyM" class="btn btn-secondary">Ver más</a>
+                            <div class="card-footer bg-secondary ">
+                                <a href="categorias.html#HyM" class="text-decoration-none"><small class="text-white">Ver más</small></a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -192,8 +172,10 @@
                                 flexibilidad de equipamiento único en el mercado, nos permite ejecutar proyectos de
                                 cualquier envergadura, cumpliendo con todas las exigencias medioambientales y los más
                                 altos estándares de calidad y seguridad.</p>
-
-                            <a href="categorias.html#RyD" class="btn btn-secondary">Ver más</a>
+                             <div class="card-footer bg-secondary ">
+                                    <a href="categorias.html#RyD" class="text-decoration-none"><small class="text-white">Ver más</small></a>
+                            </div>
+    
                         </div>
                     </div>
                 </div>
@@ -211,8 +193,10 @@
                                 altura, donde el operario no puede alcanzar por su propia naturaleza. Contamos con
                                 andamios, guinches, elevadores, arnés de seguridad, salva caídas, etc.
                             </p>
-                            <br>
-                            <a href="categorias.html#TeA" class="btn btn-secondary">Ver más</a>
+                            <div class="card-footer bg-secondary ">
+                                <a href="categorias.html#HTeA" class="text-decoration-none"><small class="text-white">Ver más</small></a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -230,9 +214,10 @@
                                 terrenos,como compactación de suelo, allanado de concreto, pulido de suelo, y diversas
                                 labores particulares e industriales.</p>
                             </p>
-                            <br>
-                            <br>
-                            <a href="categorias.html#Ter" class="btn btn-secondary">Ver más</a>
+                            <div class="card-footer bg-secondary ">
+                                <a href="categorias.html#Ter" class="text-decoration-none"><small class="text-white">Ver más</small></a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -258,16 +243,16 @@
     <!--inicio footer-->
     <footer class="gridfooter pie">
         <div class="pie pie__redes pie__pie1">
-            <a target="_blank" class="redes" href="https://instagram.com/"><img src="imagenes/ImgInsta.png" alt=""
+            <a target="_blank" class="redes" href="https://instagram.com/"><img src="imagenes/imgInsta.png" alt=""
                     data-aos="zoom-in-right">
             </a>
             <a target="_blank" class="redes" href="https://facebook.com/"><img src="imagenes/imgFace.png" alt=""
                     data-aos="zoom-in-right">
             </a>
-            <a target="_blank" class="redes" href="https://twitter.com/"><img src="imagenes/ImgTwit.png" alt=""
+            <a target="_blank" class="redes" href="https://twitter.com/"><img src="imagenes/imgTwit.png" alt=""
                     data-aos="zoom-in-left">
             </a>
-            <a target="_blank" class="redes" href="https://youtube.com/"><img src="imagenes/ImgYou.png" alt=""
+            <a target="_blank" class="redes" href="https://youtube.com/"><img src="imagenes/imgYou.png" alt=""
                     data-aos="zoom-in-left">
             </a>
             <a target="_blank" class="redes" href="https://wa.me/5492615998283"><img src="imagenes/imgwhatsapp.png"

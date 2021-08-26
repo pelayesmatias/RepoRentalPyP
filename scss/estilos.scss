@@ -13,8 +13,6 @@ $fondoMain: white;
 /*estiloFuentegeneral*/
 body{
     font-family: 'Lato', sans-serif;
-    margin-left: 2px;
-    margin-right: 2px;
 }
 
 
@@ -22,7 +20,9 @@ body{
 main{
     background-color: $fondoMain;
     line-height: 25px;
-    letter-spacing: 1px; 
+    letter-spacing: 1px;
+    width: 100%; 
+    
 } 
 /*estiloH2*/
         h2{
@@ -117,7 +117,7 @@ main{
 
 /*Footer*/
 .gridfooter{
-    grid-template-columns: 95%;
+    grid-template-columns: 100%;
     grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
     align-content: center;
     grid-template-areas: "pie1"
@@ -200,7 +200,6 @@ button:hover{
 .imagenTabla:hover{
     transform: scale(1.2,1.5);
 }    
-        
 
 /*Tutoriales*/
 .instructivo{
@@ -216,8 +215,6 @@ button:hover{
     }
     &__lista{
     list-style-position: inside;
-
-    
     border-radius: 20px;
     
     }
@@ -258,7 +255,7 @@ button:hover{
 
       
 .gridQuienes{
-    width: 98%;
+    width: 100%;
     height: 70%;
     display: grid;
     padding-right: 20px;
@@ -270,7 +267,6 @@ button:hover{
     color: $colorparrafo; 
     padding-left: 10px;
     text-align: center;
-    border: 2px;
     background-color: $fondoGeneral;
     grid-template-areas: "area1 area2"
     "area3 area2"; 
@@ -318,6 +314,7 @@ button:hover{
     margin-left: 30px;
 
 }
+
 /*Fin Quienes Somos*/
         
 /*Contacto*/
@@ -430,9 +427,6 @@ input:focus {
         font-size: 8px;
 
     }
-    audio{
-        margin-left: 10%;
-    }
     .VideosTutoriales__Titulo{
         margin-left: 18%;
         margin-right: 20%;
@@ -491,9 +485,6 @@ input:focus {
         font-size: 10px;
 
     }
-    audio{
-        margin-left: 25%;
-    }
     
     .VideosTutoriales__Titulo{
         margin-left: 20%;
@@ -546,11 +537,7 @@ input:focus {
         font-size: 13px;
 
     }
-    audio{
-        margin-left: 40%;
-    }
-    
-
+   
     .VideosTutoriales__Titulo{
         margin-left: 30%;
         margin-right: 20%;
