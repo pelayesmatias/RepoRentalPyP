@@ -18,19 +18,26 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-
     <!--inicio header-->
-    <header class="header">
-        <div class="container-sm header__Cabecera">
-            <table class="table header__TablaCab">
-                <thead class="header__thead">
+    <header class="header table-responsive-sm">
+        <div class="header__Cabecera">
+            <table class="table hidden header__TablaCab">
+                <thead class="header__thead ">
                     <tr>
-                        <th class="col header__Clogo" scope="col"><img src="imagenes/imglogo.png" alt=""></th>
+                        <th class="col animation header__Clogo" scope="col"><img
+                                srcset="imagenes/imglogoHD.png 3x, imagenes/imglogoMD.png 2x, imagenes/imglogo.png 1x"
+                                src="imagenes/imglogoHD.png" alt=""></th>
                         <th class="col animation header__Titulo" scope="col">RENTAL P&P</th>
+                        <th class="col header__Boton" scope="col"><a href="construccion.html"><button type="button"
+                                    class="btn-sm btn-warning">Registrarse</button></a></th>
+                        <th class="col header__Boton" scope="col"><a href="construccion.html"><button type="button"
+                                    class="btn-sm btn-warning">Iniciar sesión</button></a></th>
+                        <th class="col header__Carrito" scope="col"><a href="construccion.html"><img
+                                    src="imagenes/imgCarrito.png" alt=""></a></th>
                     </tr>
                 </thead>
             </table>
@@ -43,14 +50,11 @@
     <div class="btn-group">
       <a href="index.html" class="btn btn-warning btn-md">Home</a>
     </div>
-
     <div class="btn-group">
-
       <button type="button" class="btn btn-warning btn-md dropdown-toggle" data-bs-toggle="dropdown"
         aria-expanded="false">
         Categorías
       </button>
-
       <ul class="dropdown-menu">
         <li><a class="dropdown-item fs-6" href="categorias.html#HyM">Herramientas y Maquinarias</a></li>
         <li><a class="dropdown-item fs-6" href="categorias.html#RyD">Rotura y Demolición</a></li>
@@ -81,322 +85,330 @@
         <li><a class="dropdown-item fs-6" href="quienessomos.html#Vision">Visión</a></li>
         <li><a class="dropdown-item fs-6" href="quienessomos.html#Mision">Misión</a></li>
         <li><a class="dropdown-item fs-6" href="quienessomos.html#Valores">Valores</a></li>
-
       </ul>
     </div>
-
     <div class="btn-group">
       <a href="contacto.html" class="btn btn-warning btn-md">Contacto</a>
     </div>
   </nav>
   <!--fin nav-->
-  <!--inicio main-->
-<main>
-    <h4>Resolvemos algunas de las preguntas más frecuentes a través de videos explicativos.
-        <br>
-        Miralos para informarte!
-    </h4>
-    <!--inicio sección Cómo alquilar-->
-    <section class="instructivo">
-        <h2 class="instructivo__titulo" data-aos="zoom-out-down">¿Cómo alquilar?</h2>
-        <ol class="instructivo__lista">
-            <li class="instructivo__item">Seleccionar producto</li>
-            <li class="instructivo__item">Indicar los días de alquiler</li>
-            <li class="instructivo__item">Completar sus datos</li>
-            <li class="instructivo__item">Elegir medio de pago</li>
-            <li class=" instructivo__item instructivo__item--listo">Y listo!</li>
-        </ol>
-        <!--fin sección Cómo alquilar-->
-        <!--inicio video HYM-->
-        <section class="VideosTutoriales flexCategorias">
-            <h2 id=THyM class="VideosTutoriales__Titulo" data-aos="zoom-out-down">Herramientas y Maquinarias</h2>
-            <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/gH50D3FqcVU"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
+    
+    <!--inicio main-->
+    <main>
+        <h4>Resolvemos algunas de las preguntas más frecuentes a través de videos explicativos.
+            <br>
+            Miralos para informarte!
+        </h4>
+        <!--inicio sección Cómo alquilar-->
+        <section class="instructivo">
+            <h2 class="instructivo__titulo" data-aos="zoom-out-down">¿Cómo alquilar?</h2>
+            <ol class="instructivo__lista">
+                <li class="instructivo__item">Seleccionar producto</li>
+                <li class="instructivo__item">Indicar los días de alquiler</li>
+                <li class="instructivo__item">Completar sus datos</li>
+                <li class="instructivo__item">Elegir medio de pago</li>
+                <li class=" instructivo__item instructivo__item--listo">Y listo!</li>
+            </ol>
+            <!--fin sección Cómo alquilar-->
+            <!--inicio video HYM-->
+            <section class="VideosTutoriales flexCategorias">
+                <h2 id=THyM class="VideosTutoriales__Titulo" data-aos="zoom-out-down">Herramientas y Maquinarias</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+                    <div class="col">
+                        <div class="card card text-center card border-warning mb-3 mx-auto">
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/gH50D3FqcVU"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
 
-                        <div class="card-body">
-                            <h5 class="card-title">Amoladoras</h5>
-                            <p class="card-text">Te mostramos como usar correctamente una amoladora</p>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Amoladoras</h5>
+                                <p class="card-text text-secondary">Te mostramos como usar correctamente una amoladora
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card text-center card border-warning mb-3 mx-auto">
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/J7aym9BhYqk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Compresores</h5>
+                                <p class="card-text text-secondary">Lo que debes saber sobre compresores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card text-center  card border-warning mb-3 mx-auto">
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/d303k8z0Lbc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Desmalezadoras</h5>
+                                <p class="card-text text-secondary">Te ayudamos con unas presentación /p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card text-center card border-warning mb-3 mx-auto">
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/Kdcu1f9H8ik"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Cortadora Ceramica </h5>
+                                <p class="card-text text-secondary">Tecnicas de corte para cortes prolijos</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/J7aym9BhYqk"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Compresores</h5>
-                            <p class="card-text">Lo que debes saber sobre compresores</p>
+            </section>
+            <!--fin video HYM-->
+            <!--inicio video RYD-->
+            <section class="VideosTutoriales flexCategorias">
+                <h2 id="TRyD" class="VideosTutoriales__Titulo" data-aos="zoom-out-down">Rotura y Demolición</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+                    <div class="col">
+                        <div class="card card text-center card border-warning mb-3 mx-auto">
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/qzmdc1ol-A0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Rotomartillo </h5>
+                                <p class="card-text text-secondary">Todo sobre rotomartillos electricos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card text-center card border-warning mb-3 mx-auto">
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/cVInN8eVdYQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Martillo demoledores 10 kg</h5>
+                                <p class="card-text text-secondary">Demostracion de rotura de contreto curado</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card text-center card border-warning mb-3 mx-auto">
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/Bad22COiyEE"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Martillo demoledores 30 kg</h5>
+                                <p class="card-text text-secondary">Demostracion de rotura de contreto curado</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card text-center card border-warning mb-3 mx-auto">
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/izmDmjzq4Fs"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Taladros </h5>
+                                <p class="card-text text-secondary">Ultimas novedades en taladros</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/d303k8z0Lbc"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Desmalezadoras</h5>
-                            <p class="card-text">Te ayudamos con unas presentación /p>
+            </section>
+            <!--fin video RYD-->
+            <!--inicio video TEA-->
+            <section class="VideosTutoriales flexCategorias">
+                <h2 id="TTeA" class="VideosTutoriales__Titulo" data-aos="zoom-out-down">Trabajo en alturas</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+                    <div class="col">
+                        <div class="card card text-center card border-warning mb-3 mx-auto">
+                            <iframe width="640" height="480" src="https://www.youtube.com/embed/IUYItdxhChc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Andamio Tubular</h5>
+                                <p class="card-text text-secondary">Montajes y normas de seguridad, prevención de
+                                    Riesgos Laborales</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card text-center card border-warning mb-3 mx-auto">
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/v9KCtABYkoU"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Andamio colgante</h5>
+                                <p class="card-text text-secondary">Como protegernos cuando trabajamos en andamios
+                                    colgantes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card text-center card border-warning mb-3 mx-auto">
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/sK5BnwV3VpI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Escaleras Extensibles</h5>
+                                <p class="card-text text-secondary">Utilizacion correcta de normas de seguridad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card text-center card border-warning mb-3 mx-auto">
+                            <iframe width="640" height="480" src="https://www.youtube.com/embed/u9OPoyZegnE"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Puntales telescopicas</h5>
+                                <p class="card-text text-secondary">Ultimas novedades en taladros</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/Kdcu1f9H8ik"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Cortadora Ceramica </h5>
-                            <p class="card-text">Tecnicas de corte para cortes prolijos</p>
+            </section>
+            <!--fin video TEA-->
+            <!--inicio video Terreno-->
+            <section class="VideosTutoriales flexCategorias">
+                <h2 id="TTer" class="VideosTutoriales__Titulo" data-aos="zoom-out-down">Terreno</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center mx-auto">
+                    <div class="col">
+                        <div class="card card text-center card border-warning mb-3 mx-auto">
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/99KkJ79eBpI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Vibropisonador</h5>
+                                <p class="card-text text-secondary">Sentí la potencia al limite </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card text-center card border-warning mb-3 mx-auto">
+                            <iframe width="854" height="478" src="https://www.youtube.com/embed/nGplT1uSdxM"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Compactadora </h5>
+                                <p class="card-text text-secondary">Preparamos el terreno para una compactacion correcta
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card text-center card border-warning mb-3 mx-auto">
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/O0wamddm77E"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Allanadora</h5>
+                                <p class="card-text text-secondary">Tutorial y uso Correcto del Helicóptero o Allanadora
+                                    para Concreto</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card text-center card border-warning mb-3 mx-auto">
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/CoycBsOdJJk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="VideosTutoriales__Video card-img-top">
+                            </iframe>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Regla vibrante</h5>
+                                <p class="card-text text-secondary">Instalación de concreto para pavimento con regla
+                                    modular PSL 6mts.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </section>
-        <!--fin video HYM-->
-        <!--inicio video RYD-->
-        <section class="VideosTutoriales flexCategorias">
-            <h2 id="TRyD" class="VideosTutoriales__Titulo" data-aos="zoom-out-down">Rotura y Demolición</h2>
-            <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/qzmdc1ol-A0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Rotomartillo </h5>
-                            <p class="card-text">Todo sobre rotomartillos electricos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/cVInN8eVdYQ"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Martillo demoledores 10 kg</h5>
-                            <p class="card-text">Demostracion de rotura de contreto curado</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/Bad22COiyEE"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Martillo demoledores 30 kg</h5>
-                            <p class="card-text">Demostracion de rotura de contreto curado</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/izmDmjzq4Fs"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Taladros </h5>
-                            <p class="card-text">Ultimas novedades en taladros</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--fin video RYD-->
-        <!--inicio video TEA-->
-        <section class="VideosTutoriales flexCategorias">
-            <h2 id="TTeA" class="VideosTutoriales__Titulo" data-aos="zoom-out-down">Trabajo en alturas</h2>
-            <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="640" height="480" src="https://www.youtube.com/embed/IUYItdxhChc"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Andamio Tubular</h5>
-                            <p class="card-text">Montajes y normas de seguridad, prevención de Riesgos Laborales</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/v9KCtABYkoU"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Andamio colgante</h5>
-                            <p class="card-text">Como protegernos cuando trabajamos en andamios colgantes</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/sK5BnwV3VpI"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Escaleras Extensibles</h5>
-                            <p class="card-text">Utilizacion correcta de normas de seguridad</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="640" height="480" src="https://www.youtube.com/embed/u9OPoyZegnE"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Puntales telescopicas</h5>
-                            <p class="card-text">Ultimas novedades en taladros</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--fin video TEA-->
-        <!--inicio video Terreno-->
-        <section class="VideosTutoriales flexCategorias">
-            <h2 id="TTer" class="VideosTutoriales__Titulo" data-aos="zoom-out-down">Terreno</h2>
-            <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center mx-auto">
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/99KkJ79eBpI"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Vibropisonador</h5>
-                            <p class="card-text">Senti la potencia al limite </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="854" height="478" src="https://www.youtube.com/embed/nGplT1uSdxM"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Compactadora </h5>
-                            <p class="card-text">Preparamos el terreno para una compactacion correcta</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/O0wamddm77E"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Allanadora</h5>
-                            <p class="card-text">Tutorial y uso Correcto del Helicóptero o Allanadora para Concreto</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card text-center card border-warning mb-3 mx-auto">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/CoycBsOdJJk"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="VideosTutoriales__Video card-img-top">
-                        </iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Regla vibrante</h5>
-                            <p class="card-text">Instalación de concreto para pavimento con regla modular PSL 6mts.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
         <!--fin inicio video T-->
-        
 
         <!--inicio carousel-->
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="imagenes/imgMarcas1.png" class="d-block w-10" alt="...">
+        <div id="carouselExampleControls" class="carousel slide carousel-multi-item" data-bs-ride="carousel"
+            data-bs-interval="2000">
+            <div class="carousel-inner carouselfooter grid height-50">
+                <div class="carousel-item active " data-bs-interval="2000">
+                    <div class="row row-cols-1 row-cols-md-1 g-3 d-flex mx-auto">
+                        <img src="imagenes/imgMarcas1.png" class="col" alt="...">
+                    </div>
                 </div>
-                <div class="carousel-item" ata-bs-interval="2000">
-                    <img src="imagenes/imgMarcas2.png" class="d-block w-10" alt="...">
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="row row-cols-1 row-cols-md-1 g-3 d-flex mx-auto">
+                        <img src="imagenes/imgMarcas2.png" class="col" alt="...">
+                    </div>
                 </div>
             </div>
         </div>
         <!--fin carousel-->
+    </main>
+    <!--fin main-->
 
-        <!--inicio footer-->
-        <footer class="gridfooter pie">
-            <div class="pie pie__redes pie__pie1">
-                <a target="_blank" class="redes" href="https://instagram.com/"><img src="imagenes/imgInsta.png" alt=""
-                        data-aos="zoom-in-right">
-                </a>
-                <a target="_blank" class="redes" href="https://facebook.com/"><img src="imagenes/imgFace.png" alt=""
-                        data-aos="zoom-in-right">
-                </a>
-                <a target="_blank" class="redes" href="https://twitter.com/"><img src="imagenes/imgTwit.png" alt=""
-                        data-aos="zoom-in-left">
-                </a>
-                <a target="_blank" class="redes" href="https://youtube.com/"><img src="imagenes/imgYou.png" alt=""
-                        data-aos="zoom-in-left">
-                </a>
-                <a target="_blank" class="redes" href="https://wa.me/5492615998283"><img src="imagenes/imgwhatsapp.png"
-                        alt="" class="WP">
-                </a>
-            </div>
-                <p class="pie pie__piePagina pie__pie2">© 2021 Rental P&P SA, todos los derechos reservados</p>
-            <p class="pie pie__piePagina pie__pie3">Parana 303 Esquina Moyano Sexta Seccion Mendoza, Argentina CP 5500
-            </p>
-            <p class="pie pie__piePagina pie__pie4">Esperamos su consulta 02614394324 / Whatsapp +549261456789
-            </p>
+    <!--inicio footer-->
+    <footer class="gridfooter pie">
+        <div class="pie pie__redes pie__pie1">
+            <a target="_blank" class="redes" href="https://instagram.com/"><img src="imagenes/imgInsta.png" alt=""
+                    data-aos="zoom-in-right">
+            </a>
+            <a target="_blank" class="redes" href="https://facebook.com/"><img src="imagenes/imgFace.png" alt=""
+                    data-aos="zoom-in-right">
+            </a>
+            <a target="_blank" class="redes" href="https://twitter.com/"><img src="imagenes/imgTwit.png" alt=""
+                    data-aos="zoom-in-left">
+            </a>
+            <a target="_blank" class="redes" href="https://youtube.com/"><img src="imagenes/imgYou.png" alt=""
+                    data-aos="zoom-in-left">
+            </a>
+            <a target="_blank" class="redes" href="https://wa.me/5492615998283"><img src="imagenes/imgwhatsapp.png"
+                    alt="" class="WP">
+            </a>
+        </div>
+        <p class="pie pie__piePagina pie__pie2">© 2021 Rental P&P SA, todos los derechos reservados</p>
+        <p class="pie pie__piePagina pie__pie3">Parana 303 Esquina Moyano Sexta Seccion Mendoza, Argentina CP 5500
+        </p>
+        <p class="pie pie__piePagina pie__pie4">Esperamos su consulta 02614394324 / Whatsapp +549261456789
+        </p>
+    </footer>
+    <!--fin footer-->
 
-        </footer>
-
-        <!--fin footer-->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

@@ -19,24 +19,32 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 
 <body>
 
   <!--inicio header-->
-  <header class="header">
-    <div class="container-sm header__Cabecera">
-      <table class="table header__TablaCab">
-        <thead class="header__thead">
+  <header class="header table-responsive-sm">
+    <div class="header__Cabecera">
+      <table class="table hidden header__TablaCab">
+        <thead class="header__thead ">
           <tr>
-            <th class="col header__Clogo" scope="col"><img src="imagenes/imglogo.png" alt=""></th>
+            <th class="col animation header__Clogo" scope="col"><img
+                srcset="imagenes/imglogoHD.png 3x, imagenes/imglogoMD.png 2x, imagenes/imglogo.png 1x"
+                src="imagenes/imglogoHD.png" alt=""></th>
             <th class="col animation header__Titulo" scope="col">RENTAL P&P</th>
+            <th class="col header__Boton" scope="col"><a href="construccion.html"><button type="button"
+                  class="btn-sm btn-warning">Registrarse</button></a></th>
+            <th class="col header__Boton" scope="col"><a href="construccion.html"><button type="button"
+                  class="btn-sm btn-warning">Iniciar sesión</button></a></th>
+            <th class="col header__Carrito" scope="col"><a href="construccion.html"><img src="imagenes/imgCarrito.png"
+                  alt=""></a></th>
           </tr>
         </thead>
       </table>
     </div>
   </header>
+
   <!--fin header-->
 
   <!--inicio nav-->
@@ -44,14 +52,11 @@
     <div class="btn-group">
       <a href="index.html" class="btn btn-warning btn-md">Home</a>
     </div>
-
     <div class="btn-group">
-
       <button type="button" class="btn btn-warning btn-md dropdown-toggle" data-bs-toggle="dropdown"
         aria-expanded="false">
         Categorías
       </button>
-
       <ul class="dropdown-menu">
         <li><a class="dropdown-item fs-6" href="categorias.html#HyM">Herramientas y Maquinarias</a></li>
         <li><a class="dropdown-item fs-6" href="categorias.html#RyD">Rotura y Demolición</a></li>
@@ -82,10 +87,8 @@
         <li><a class="dropdown-item fs-6" href="quienessomos.html#Vision">Visión</a></li>
         <li><a class="dropdown-item fs-6" href="quienessomos.html#Mision">Misión</a></li>
         <li><a class="dropdown-item fs-6" href="quienessomos.html#Valores">Valores</a></li>
-
       </ul>
     </div>
-
     <div class="btn-group">
       <a href="contacto.html" class="btn btn-warning btn-md">Contacto</a>
     </div>
@@ -99,7 +102,6 @@
     <h2 id="HyM" data-aos="zoom-in-up">Herramientas y Maquinarias</h2>
     <img src="imagenes/imgHerramientas.png" alt="" class="imagenCategoria" data-aos="zoom-in-up">
     <div class="accordion" id="accordionExample">
-
       <!--inicio amoladoras-->
       <div class="accordion-item">
         <h3 class="accordion-header" id="headingOne">
@@ -114,31 +116,31 @@
             <section>
               <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                  <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px;">
+                  <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px;">
                     <h4 class="card-title text-center">AMOLADORA ANGULAR AG 125-13S</h4>
                     <img src="imagenes/imgAmoladora125-13S.png" class="card-img-top imagenTabla" alt="...">
                     <div class="card-body">
                       <p class="card-text text-center">Amoladora angular de 1300W con escobillas de carbón de larga vida
                         útil para tareas de corte y desbaste con discos de hasta 125 mm de diámetro</p>
                       <p class="card-text text-center fw-bold">Alquiler por día $500</p>
-                      <a href="#" class="btn btn-warning">Alquilar</a>
+                      <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                  <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                     <h4 class="card-title text-center">AMOLADORA ANGULAR AG 180-P</h4>
                     <img src="imagenes/imgAmoladora230-24D.png" class="card-img-top imagenTabla" alt="...">
                     <div class="card-body">
                       <p class="card-text text-center">Amoladora angular de 2000 W con interruptor de encendido/apagado
                         estándar, para aplicaciones en metal con discos de hasta 180 mm</p>
                       <p class="card-text text-center fw-bold">Alquiler por día $800</p>
-                      <a href="#" class="btn btn-warning ">Alquilar</a>
+                      <a href="construccion.html" class="btn btn-warning ">Alquilar</a>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                  <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                     <h4 class="card-title text-center">AMOLADORA ANGULAR AG 230-24D</h4>
                     <img src="imagenes/imgAmoladora230-24D.png" class="card-img-top imagenTabla" alt="...">
                     <div class="card-body">
@@ -147,7 +149,7 @@
                         230 mm
                       </p>
                       <p class="card-text text-center fw-bold">Alquiler por día $1000</p>
-                      <a href="#" class="btn btn-warning">Alquilar</a>
+                      <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                     </div>
                   </div>
                 </div>
@@ -173,14 +175,14 @@
           <section>
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px;">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px;">
                   <h4 class="card-title text-center">CARRETILLA CHAPA</h4>
                   <img src="imagenes/imgCarritilla.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
                     <p class="card-text text-center">Carretilla neaumática 6 telas de metal con capacidad de 75 litros
                     </p>
                     <p class="card-text text-center fw-bold">Alquiler por día $500</p>
-                    <a href="#" class="btn btn-warning">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                   </div>
                 </div>
               </div>
@@ -205,7 +207,7 @@
           <section>
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px;">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px;">
                   <h4 class="card-title text-center">COMPRESOR 100 lts</h4>
                   <img src="imagenes/imgCompresor.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
@@ -213,12 +215,12 @@
                       HP)
                     </p>
                     <p class="card-text text-center fw-bold">Alquiler por día $500</p>
-                    <a href="#" class="btn btn-warning">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                   <h4 class="card-title text-center">COMPRESOR 250 lts</h4>
                   <img src="imagenes/imgCompresor.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
@@ -226,12 +228,12 @@
                       HP)
                     </p>
                     <p class="card-text text-center fw-bold">Alquiler por día $800</p>
-                    <a href="#" class="btn btn-warning ">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning ">Alquilar</a>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                   <h4 class="card-title text-center">COMPRESOR EXPLOSIÓN</h4>
                   <img src="imagenes/imgCompresor.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
@@ -239,7 +241,7 @@
                       HP)
                     </p>
                     <p class="card-text text-center fw-bold">Alquiler por día $2800</p>
-                    <a href="#" class="btn btn-warning">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                   </div>
                 </div>
               </div>
@@ -264,7 +266,7 @@
           <section>
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px;">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px;">
                   <h4 class="card-title text-center">Cortadora Manual TX-1250 MAX</h4>
                   <img src="imagenes/imgCTX-1250.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
@@ -272,12 +274,12 @@
                       altura de
                       corte 3-21 mm</p>
                     <p class="card-text text-center fw-bold">Alquiler por día $2000</p>
-                    <a href="#" class="btn btn-warning">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                   <h4 class="card-title text-center">Cortadora Manual TX-710 MAX</h4>
                   <img src="imagenes/imgTX-710 MAX.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
@@ -285,12 +287,12 @@
                       altura de
                       corte 3-21 mm </p>
                     <p class="card-text text-center fw-bold">Alquiler por día $2000</p>
-                    <a href="#" class="btn btn-warning ">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning ">Alquilar</a>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                   <h4 class="card-title text-center">Cortadora manual TS-57 MAX Orange</h4>
                   <img src="imagenes/imgTS-57 MAXOrange.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
@@ -298,7 +300,7 @@
                       altura de
                       corte 3-21 mm</p>
                     <p class="card-text text-center fw-bold">Alquiler por día $1200</p>
-                    <a href="#" class="btn btn-warning">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                   </div>
                 </div>
               </div>
@@ -307,7 +309,6 @@
         </div>
       </div>
     </div>
-
     <!--fin cortadora ceramica-->
 
     <!--inicio desmalezadora-->
@@ -322,28 +323,28 @@
         data-bs-parent="#accordionExample">
         <div class="accordion-body">
           <section>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px;">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px;">
                   <h4 class="card-title text-center">FS 450 Desbrozadora muy potente</h4>
                   <img src="imagenes/imgFs450.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
                     <p class="card-text text-center">Cilindrada 43,3 cm³, Cuchilla de matorrales 300-3 y AutoCut 46-2
                     </p>
                     <p class="card-text text-center fw-bold">Alquiler por día $2000</p>
-                    <a href="#" class="btn btn-warning">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                   <h4 class="card-title text-center">FS 510 C-EM Potente desbrozadora</h4>
                   <img src="imagenes/imgFs450.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
                     <p class="card-text text-center">Cilindrada 51,6 cm³, Cuchilla de matorrales 350-3 y AutoCut 46-2
                     </p>
                     <p class="card-text text-center fw-bold">Alquiler por día $0600</p>
-                    <a href="#" class="btn btn-warning">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                   </div>
                 </div>
               </div>
@@ -351,8 +352,8 @@
         </div>
       </div>
     </div>
-
     <!--fin desmalezadoras-->
+
     <!--fin sección herramientas-->
 
     <!--inicio categoria Rotura y Demolición-->
@@ -371,52 +372,52 @@
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
             <section>
-              <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                  <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px;">
+                  <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px;">
                     <h4 class="card-title text-center">MARTILLO HILTI TE 800-AVR</h4>
                     <img src="imagenes/imgTe800.png" class="card-img-top imagenTabla" alt="...">
                     <div class="card-body">
                       <p class="card-text text-center">Martillo voltaje nominal 220 v, peso Epta 10,6 kg y fuerza de
                         impacto 21 J</p>
                       <p class="card-text text-center fw-bold">Alquiler por día $2000</p>
-                      <a href="#" class="btn btn-warning">Alquilar</a>
+                      <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
-                    <h5 class="card-title text-center">MARTILLO HILTI TE 1000-AVR</h5>
+                  <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
+                    <h4 class="card-title text-center">MARTILLO HILTI TE 1000-AVR</h4>
                     <img src="imagenes/imgTe1000.png" class="card-img-top imagenTabla" alt="...">
                     <div class="card-body">
                       <p class="card-text text-center">Martillo voltaje nominal 220 v, peso Epta 12,5 kg y fuerza de
                         impacto 26 J </p>
                       <p class="card-text text-center fw-bold">Alquiler por día $2300</p>
-                      <a href="#" class="btn btn-warning ">Alquilar</a>
+                      <a href="construccion.html" class="btn btn-warning ">Alquilar</a>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                  <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                     <h4 class="card-title text-center">MARTILLO HILTI TE 2000-AVR</h4>
                     <img src="imagenes/imgTe2000.png" class="card-img-top imagenTabla" alt="...">
                     <div class="card-body">
                       <p class="card-text text-center">Martillo voltaje nominal 220 v, peso Epta 14,5 kg y fuerza de
                         impacto 35 J </p>
                       <p class="card-text text-center fw-bold">Alquiler por día $2600</p>
-                      <a href="#" class="btn btn-warning">Alquilar</a>
+                      <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                  <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                     <h4 class="card-title text-center">MARTILLO HILTI TE 3000-AVR</h4>
                     <img src="imagenes/imgTe3000.png" class="card-img-top imagenTabla" alt="...">
                     <div class="card-body">
                       <p class="card-text text-center">Martillo voltaje nominal 220 v, peso Epta 29,9 kg y fuerza de
                         impacto 68 J </p>
                       <p class="card-text text-center fw-bold">Alquiler por día $3200</p>
-                      <a href="#" class="btn btn-warning">Alquilar</a>
+                      <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                     </div>
                   </div>
                 </div>
@@ -442,7 +443,7 @@
           <section>
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px;">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px;">
                   <h4 class="card-title text-center">ASERRADORA DE JUNTAS</h4>
                   <img src="imagenes/imgAserradorapavimento.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
@@ -450,7 +451,7 @@
                       profundidad,tanque de agua de 10 litros,motor.Honda GP160
                     </p>
                     <p class="card-text text-center fw-bold">Alquiler por día $500</p>
-                    <a href="#" class="btn btn-warning">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                   </div>
                 </div>
               </div>
@@ -459,15 +460,14 @@
         </div>
       </div>
     </div>
-
     <!--inicio categoria martillo y rompe pavimento-->
+
     <!--fin categoria Rotura y Demolición-->
 
     <!--inicio categoria Trabajo en alturas-->
     <h2 id="TeA" data-aos="zoom-in-up">Trabajo en alturas</h2>
     <img src="imagenes/imgHerramientas.png" alt="" class="imagenCategoria" data-aos="zoom-in-up">
     <div class="accordion" id="accordionExample">
-
       <!--inicio categoria andamio-->
       <div class="accordion-item">
         <h3 class="accordion-header" id="headingOne">
@@ -482,7 +482,7 @@
             <section>
               <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                  <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px;">
+                  <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px;">
                     <h4 class="card-title text-center">Andamio prearmado reforzado</h4>
                     <img src="imagenes/imgAndamioreforzado.png" class="card-img-top imagenTabla" alt="...">
                     <div class="card-body">
@@ -490,12 +490,12 @@
                         espesor.Largo total: 2,5 M. o 3.Ancho: 1,30 m.Alto: 1,80 m.Apilables hasta 100 m. de altura
                       </p>
                       <p class="card-text text-center fw-bold">Alquiler por día $500</p>
-                      <a href="#" class="btn btn-warning">Alquilar</a>
+                      <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                  <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                     <h4 class="card-title text-center">Andamio colgante</h4>
                     <img src="imagenes/imgAndamiocolgante.png" class="card-img-top imagenTabla" alt="...">
                     <div class="card-body">
@@ -503,19 +503,19 @@
                         tablones de 3 m,2 pares de barandas,2 guardapies,2 travesaños de sustentación.Capacidad del
                         carretel hasta 70 m. de cable de 8 mm.</p>
                       <p class="card-text text-center fw-bold">Alquiler por día $800</p>
-                      <a href="#" class="btn btn-warning ">Alquilar</a>
+                      <a href="construccion.html" class="btn btn-warning ">Alquilar</a>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                  <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                     <h4 class="card-title text-center">Tablón metálico</h4>
                     <img src="imagenes/imgTablon.png" class="card-img-top imagenTabla" alt="...">
                     <div class="card-body">
                       <p class="card-text text-center">Fabricados con chapa perforada antideslizante de 1/8”.Largo
                         total: 2,5 m. o 3 m.Soportan una carga repartida de hasta 373 k</p>
                       <p class="card-text text-center fw-bold">Alquiler por día $1000</p>
-                      <a href="#" class="btn btn-warning">Alquilar</a>
+                      <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                     </div>
                   </div>
                 </div>
@@ -541,7 +541,7 @@
           <section>
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px;">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px;">
                   <h4 class="card-title text-center">Escalera extensible</h4>
                   <img src="imagenes/imgEscaleraextensible.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
@@ -549,12 +549,12 @@
                       (dieléctrica). Capacidad de carga: 225kg USO INDUSTRIAL PESADO.
                     </p>
                     <p class="card-text text-center fw-bold">Alquiler por día $500</p>
-                    <a href="#" class="btn btn-warning">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                   <h4 class="card-title text-center">Escalera Tres Tramos</h4>
                   <img src="imagenes/imgEscaleratresTramos.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
@@ -562,19 +562,19 @@
                       simple.Sistema de trabas de seguridad.Tacos de goma antiderrape.
                     </p>
                     <p class="card-text text-center fw-bold">Alquiler por día $800</p>
-                    <a href="#" class="btn btn-warning ">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning ">Alquilar</a>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                   <h4 class="card-title text-center">Puntal Telescópico</h4>
                   <img src="imagenes/imgPuntalestelescopicos.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
                     <p class="card-text text-center">Fabricados con chapa perforada antideslizante de 1/8”.Largo
                       total: 2,5 m. o 3 m.Soportan una carga repartida de hasta 373 kg</p>
                     <p class="card-text text-center fw-bold">Alquiler por día $1000</p>
-                    <a href="#" class="btn btn-warning">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                   </div>
                 </div>
               </div>
@@ -583,15 +583,14 @@
         </div>
       </div>
     </div>
-
     <!--fin categoria escalera y puntales-->
+
     <!--fin sección Trabajo en alturas-->
 
     <!--inicio categoria Terreno-->
     <h2 id="Ter" data-aos="zoom-in-up">Terreno</h2>
     <img src="imagenes/imgTerreno.png" alt="" class="imagenCategoria" data-aos="zoom-in-up">
     <div class="accordion" id="accordionExample">
-
       <!--inicio categoria compactacion-->
       <div class="accordion-item">
         <h3 class="accordion-header" id="headingOne">
@@ -606,19 +605,19 @@
             <section>
               <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                  <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px;">
+                  <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px;">
                     <h4 class="card-title text-center">Placa compactadora</h4>
                     <img src="imagenes/imgPlacacompactadora.png" class="card-img-top imagenTabla" alt="...">
                     <div class="card-body">
                       <p class="card-text text-center"> Placa de 520 x 500 mm.Fuerza de impacto: 21 kN Frecuencia
                         de vibrado: 6500 vpm Peso total: 85 kg.Motor de 5.5 HP:</p>
                       <p class="card-text text-center fw-bold">Alquiler por día $500</p>
-                      <a href="#" class="btn btn-warning">Alquilar</a>
+                      <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                  <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                     <h4 class="card-title text-center">Vibropisonador</h4>
                     <img src="imagenes/imgCanguropison.png" class="card-img-top imagenTabla" alt="...">
                     <div class="card-body">
@@ -626,12 +625,12 @@
                         mm.Motor Honda GXR120 de 3,6 HP diseñado especialmente para estos equipos.
                       </p>
                       <p class="card-text text-center fw-bold">Alquiler por día $800</p>
-                      <a href="#" class="btn btn-warning ">Alquilar</a>
+                      <a href="construccion.html" class="btn btn-warning ">Alquilar</a>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                  <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                     <h4 class="card-title text-center">Rodillos vibratorios</h4>
                     <img src="imagenes/imgRodillocompactador.png" class="card-img-top imagenTabla" alt="...">
                     <div class="card-body">
@@ -640,7 +639,7 @@
                         variable (hasta 7000 m/h)Peso total: 900 kg.
                       </p>
                       <p class="card-text text-center fw-bold">Alquiler por día $1000</p>
-                      <a href="#" class="btn btn-warning">Alquilar</a>
+                      <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                     </div>
                   </div>
                 </div>
@@ -666,7 +665,7 @@
           <section>
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px;">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px;">
                   <h4 class="card-title text-center">Allanadora Simple</h4>
                   <img src="imagenes/imgAllanadorasimple.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
@@ -675,12 +674,12 @@
                       transformarse de 90 cm a 120 cm
                     </p>
                     <p class="card-text text-center fw-bold">Alquiler por día $500</p>
-                    <a href="#" class="btn btn-warning">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                   <h4 class="card-title text-center">Allanadora Doble</h4>
                   <img src="imagenes/imgAllanadoradoble.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
@@ -688,12 +687,12 @@
                       módulos grandes que no requieren mantenimiento.
                     </p>
                     <p class="card-text text-center fw-bold">Alquiler por día $800</p>
-                    <a href="#" class="btn btn-warning ">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning ">Alquilar</a>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                   <h4 class="card-title text-center">Regla Vibratoria</h4>
                   <img src="imagenes/imgReglavibratoriamano.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
@@ -702,12 +701,12 @@
                       capacidad de flotado. Único con Perfil Reversible.
                     </p>
                     <p class="card-text text-center fw-bold">Alquiler por día $2800</p>
-                    <a href="#" class="btn btn-warning">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card card border-warning mb-3" style="width: 22rem; height: 100%; padding-top: 10px">
+                <div class="card card border-warning mb-3" style="width: 100%; height: 100%; padding-top: 10px">
                   <h4 class="card-title text-center">Regla Vibratoria extensible</h4>
                   <img src="imagenes/imgReglavibratoriaextensible.png" class="card-img-top imagenTabla" alt="...">
                   <div class="card-body">
@@ -716,7 +715,7 @@
                       una mejor distribución de las vibraciones, ofreciendo un reglado parejo y uniforme en toda
                       su longitud.</p>
                     <p class="card-text text-center fw-bold">Alquiler por día $3200</p>
-                    <a href="#" class="btn btn-warning">Alquilar</a>
+                    <a href="construccion.html" class="btn btn-warning">Alquilar</a>
                   </div>
                 </div>
               </div>
@@ -727,21 +726,25 @@
     </div>
     <!--fin categoria allanadora-->
     <!--fin sección Terreno-->
-  </main>
-  <!--fin main-->
-
-  <!--inicio carousel-->
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="2000">
-        <img src="imagenes/imgMarcas1.png" class="d-block w-10" alt="...">
-      </div>
-      <div class="carousel-item" ata-bs-interval="2000">
-        <img src="imagenes/imgMarcas2.png" class="d-block w-10" alt="...">
+    <!--inicio carousel-->
+    <div id="carouselExampleControls" class="carousel slide carousel-multi-item" data-bs-ride="carousel"
+      data-bs-interval="2000">
+      <div class="carousel-inner carouselfooter grid height-50">
+        <div class="carousel-item active " data-bs-interval="2000">
+          <div class="row row-cols-1 row-cols-md-1 g-3 d-flex mx-auto">
+            <img src="imagenes/imgMarcas1.png" class="col" alt="...">
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="row row-cols-1 row-cols-md-1 g-3 d-flex mx-auto">
+            <img src="imagenes/imgMarcas2.png" class="col" alt="...">
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <!--fin carousel-->
+    <!--fin carousel-->
+  </main>
+  <!--fin main-->
 
   <!--inicio footer-->
   <footer class="gridfooter pie">
@@ -762,25 +765,21 @@
           class="WP">
       </a>
     </div>
-
     <p class="pie pie__piePagina pie__pie2">© 2021 Rental P&P SA, todos los derechos reservados</p>
     <p class="pie pie__piePagina pie__pie3">Parana 303 Esquina Moyano Sexta Seccion Mendoza, Argentina CP 5500
     </p>
     <p class="pie pie__piePagina pie__pie4">Esperamos su consulta 02614394324 / Whatsapp +549261456789
     </p>
-
   </footer>
-
   <!--fin footer-->
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

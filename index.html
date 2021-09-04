@@ -19,19 +19,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 
 <body>
 
     <!--inicio header-->
-    <header class="header ">
-        <div class="container-sm header__Cabecera">
-            <table class="table header__TablaCab">
-                <thead class="header__thead">
+    <header class="header table-responsive-sm">
+        <div class="header__Cabecera">
+            <table class="table hidden header__TablaCab">
+                <thead class="header__thead ">
                     <tr>
-                        <th class="col header__Clogo" scope="col"><img src="imagenes/imglogo.png" alt=""></th>
+                        <th class="col animation header__Clogo" scope="col"><img
+                                srcset="imagenes/imglogoHD.png 3x, imagenes/imglogoMD.png 2x, imagenes/imglogo.png 1x"
+                                src="imagenes/imglogoHD.png" alt=""></th>
                         <th class="col animation header__Titulo" scope="col">RENTAL P&P</th>
+                        <th class="col header__Boton" scope="col"><a href="construccion.html"><button type="button"
+                                    class="btn-sm btn-warning">Registrarse</button></a></th>
+                        <th class="col header__Boton" scope="col"><a href="construccion.html"><button type="button"
+                                    class="btn-sm btn-warning">Iniciar sesión</button></a></th>
+                        <th class="col header__Carrito" scope="col"><a href="construccion.html"><img
+                                    src="imagenes/imgCarrito.png" alt=""></a></th>
                     </tr>
                 </thead>
             </table>
@@ -44,14 +51,12 @@
         <div class="btn-group">
             <a href="index.html" class="btn btn-warning btn-md">Home</a>
         </div>
-
         <div class="btn-group">
 
             <button type="button" class="btn btn-warning btn-md dropdown-toggle" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Categorías
             </button>
-
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item fs-6" href="categorias.html#HyM">Herramientas y Maquinarias</a></li>
                 <li><a class="dropdown-item fs-6" href="categorias.html#RyD">Rotura y Demolición</a></li>
@@ -71,7 +76,6 @@
                 <li><a class="dropdown-item fs-6" href="tutoriales.html#TTer">Terreno</a></li>
             </ul>
         </div>
-
         <div class="btn-group">
             <button type="button" class="btn btn-warning btn-md dropdown-toggle" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -82,7 +86,6 @@
                 <li><a class="dropdown-item fs-6" href="quienessomos.html#Vision">Visión</a></li>
                 <li><a class="dropdown-item fs-6" href="quienessomos.html#Mision">Misión</a></li>
                 <li><a class="dropdown-item fs-6" href="quienessomos.html#Valores">Valores</a></li>
-
             </ul>
         </div>
 
@@ -91,8 +94,6 @@
         </div>
     </nav>
     <!--fin nav-->
-
-
 
     <!--inicio main-->
     <main>
@@ -140,105 +141,115 @@
         </div>
 
         <!--inicio sección Herramientas-->
-        <div class="row row-cols-1 row-cols-md-4 g-3 d-flex justify-content-center">
-            <div class="col" id="HHyM" data-aos="fade-up">
-                <div class="card h-100">
-                    <div class="card text-dark bg-warning  card text-center " style="width: 20rem;height: 100%">
-                        <img src="imagenes/imgHerramientas.png" class="card-img-top rounded-lg" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title fs-3">Herramientas y Maquinarias</h2>
-                            <p class="card-text">Podés encontrar diversos artículos manuales, eléctricas y de combustión
-                                diseñados para facilitar la realización de ciertos trabajos como
-                                deconstrucción,metalúrgica, plomería-gas, jardinería, uso industrial y particular.
-                            </p>
-                            <div class="card-footer bg-secondary ">
-                                <a href="categorias.html#HyM" class="text-decoration-none"><small class="text-white">Ver más</small></a>
+        <div class="container d-flex justify-content-center align-items-center width:100%">
+            <div class="row row-cols-1 row-cols-md-4 g-3 d-flex mx-auto justify-content-center ">
+                <div class="col" id="HHyM" data-aos="fade-up">
+                    <div class="card h-100 text-center">
+                        <div class="card text-dark bg-warning  card text-center " style="width: 100%;height: 100%">
+                            <img src="imagenes/imgHerramientas.png" class="card-img-top rounded-lg" alt="...">
+                            <div class="card-body">
+                                <h2 class="card-title fs-3">Herramientas y Maquinarias</h2>
+                                <p class="card-text">Podés encontrar diversos artículos manuales, eléctricas y de
+                                    combustión
+                                    diseñados para facilitar la realización de ciertos trabajos como
+                                    deconstrucción,metalúrgica, plomería-gas, jardinería, uso industrial y particular.
+                                </p>
+                                <div class="card-footer bg-secondary ">
+                                    <a href="categorias.html#HyM" class="text-decoration-none"><small
+                                            class="text-white">Ver más</small></a>
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--fin sección herramientas-->
+                <!--fin sección herramientas-->
 
-            <!--inicio sección Rotura y Demolición-->
-            <div class="col" id="RyD" data-aos="fade-down">
-                <div class="card h-100">
-                    <div class="card text-dark bg-warning  card text-center" style="width: 20rem;height: 100%">
-                        <img src="imagenes/imgRotura.png" class="card-img-top rounded-lg" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title fs-3">Rotura y Demolición</h2>
-                            <p class="card-text"> A la hora de realizar tareas de roturas y demoliciones, nuestra
-                                flexibilidad de equipamiento único en el mercado, nos permite ejecutar proyectos de
-                                cualquier envergadura, cumpliendo con todas las exigencias medioambientales y los más
-                                altos estándares de calidad y seguridad.</p>
-                             <div class="card-footer bg-secondary ">
-                                    <a href="categorias.html#RyD" class="text-decoration-none"><small class="text-white">Ver más</small></a>
+                <!--inicio sección Rotura y Demolición-->
+                <div class="col" id="RyD" data-aos="fade-down">
+                    <div class="card h-100">
+                        <div class="card text-dark bg-warning  card text-center" style="width: 100%;height: 100%">
+                            <img src="imagenes/imgRotura.png" class="card-img-top rounded-lg" alt="...">
+                            <div class="card-body">
+                                <h2 class="card-title fs-3">Rotura y Demolición</h2>
+                                <p class="card-text"> A la hora de realizar tareas de roturas y demoliciones, nuestra
+                                    flexibilidad de equipamiento único en el mercado, nos permite ejecutar proyectos de
+                                    cualquier envergadura, cumpliendo con todas las exigencias medioambientales y los
+                                    más
+                                    altos estándares de calidad y seguridad.</p>
+                                <div class="card-footer bg-secondary ">
+                                    <a href="categorias.html#RyD" class="text-decoration-none"><small
+                                            class="text-white">Ver más</small></a>
+                                </div>
                             </div>
-    
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!--fin sección Rotura y Demolición-->
-            <!--inicio sección Trabajo en alturas-->
-            <div class="col" id="HTeA" data-aos="fade-up">
-                <div class="card h-100 ">
-                    <div class="card text-dark bg-warning card text-center " style="width: 20rem;height: 100%">
-                        <img src="imagenes/imgAndamio.png" class="card-img-top rounded-lg" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title fs-3">Trabajo en Alturas</h2>
-                            <p class="card-text"> Para ejecutar una labor óptima y segura en trabajos realizados en
-                                altura, donde el operario no puede alcanzar por su propia naturaleza. Contamos con
-                                andamios, guinches, elevadores, arnés de seguridad, salva caídas, etc.
-                            </p>
-                            <div class="card-footer bg-secondary ">
-                                <a href="categorias.html#HTeA" class="text-decoration-none"><small class="text-white">Ver más</small></a>
+                <!--fin sección Rotura y Demolición-->
+                <!--inicio sección Trabajo en alturas-->
+                <div class="col" id="HTeA" data-aos="fade-up">
+                    <div class="card h-100 ">
+                        <div class="card text-dark bg-warning card text-center " style="width: 100%;height: 100%">
+                            <img src="imagenes/imgAndamio.png" class="card-img-top rounded-lg" alt="...">
+                            <div class="card-body">
+                                <h2 class="card-title fs-3">Trabajo en Alturas</h2>
+                                <p class="card-text"> Para ejecutar una labor óptima y segura en trabajos realizados en
+                                    altura, donde el operario no puede alcanzar por su propia naturaleza. Contamos con
+                                    andamios, guinches, elevadores, arnés de seguridad, salva caídas, etc.
+                                </p>
+                                <div class="card-footer bg-secondary ">
+                                    <a href="categorias.html#HTeA" class="text-decoration-none"><small
+                                            class="text-white">Ver más</small></a>
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!--fin sección Trabajo en alturas-->
-            <!--inicio sección Terreno-->
-            <div class="col" id="Ter" data-aos="fade-down">
-                <div class="card h-100">
-                    <div class="card text-dark bg-warning card text-center" style="width: 20rem;height: 100%">
-                        <img src="imagenes/imgTerreno.png" class="card-img-top rounded-lg" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title fs-3">Terreno</h2>
-                            <p class="card-text">Equipos mecánicos pesados, para dar soluciones a trabajos en
-                                terrenos,como compactación de suelo, allanado de concreto, pulido de suelo, y diversas
-                                labores particulares e industriales.</p>
-                            </p>
-                            <div class="card-footer bg-secondary ">
-                                <a href="categorias.html#Ter" class="text-decoration-none"><small class="text-white">Ver más</small></a>
+                <!--fin sección Trabajo en alturas-->
+                <!--inicio sección Terreno-->
+                <div class="col" id="Ter" data-aos="fade-down">
+                    <div class="card h-100">
+                        <div class="card text-dark bg-warning card text-center" style="width:100%;height: 100%">
+                            <img src="imagenes/imgTerreno.png" class="card-img-top rounded-lg" alt="...">
+                            <div class="card-body">
+                                <h2 class="card-title fs-3">Terreno</h2>
+                                <p class="card-text">Equipos mecánicos pesados, para dar soluciones a trabajos en
+                                    terrenos,como compactación de suelo, allanado de concreto, pulido de suelo, y
+                                    diversas
+                                    labores particulares e industriales.</p>
+                                </p>
+                                <div class="card-footer bg-secondary ">
+                                    <a href="categorias.html#Ter" class="text-decoration-none"><small
+                                            class="text-white">Ver más</small></a>
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!--fin sección Terreno-->
-    </main>
-    <!--fin main-->
 
-    <!--inicio carousel-->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="2000">
-                <img src="imagenes/imgMarcas1.png" class="d-block w-10" alt="...">
-            </div>
-            <div class="carousel-item" ata-bs-interval="2000">
-                <img src="imagenes/imgMarcas2.png" class="d-block w-10" alt="...">
+        <!--inicio carousel-->
+        <div id="carouselExampleControls" class="carousel slide carousel-multi-item" data-bs-ride="carousel"
+            data-bs-interval="2000">
+            <div class="carousel-inner carouselfooter grid height-50">
+                <div class="carousel-item active " data-bs-interval="2000">
+                    <div class="row row-cols-1 row-cols-md-1 g-3 d-flex mx-auto">
+                        <img src="imagenes/imgMarcas1.png" class="col" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="row row-cols-1 row-cols-md-1 g-3 d-flex mx-auto">
+                        <img src="imagenes/imgMarcas2.png" class="col" alt="...">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!--fin carousel-->
+        <!--fin carousel-->
+    </main>
+    <!--fin main-->
 
     <!--inicio footer-->
     <footer class="gridfooter pie">
@@ -265,18 +276,18 @@
         </p>
         <p class="pie pie__piePagina pie__pie4">Esperamos su consulta 02614394324 / Whatsapp +549261456789
         </p>
-
+        
     </footer>
-
-    <!--fin footer-->
+    <!--fin footer--> 
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 
 </body>
 
